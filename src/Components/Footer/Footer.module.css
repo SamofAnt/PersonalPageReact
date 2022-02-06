@@ -1,0 +1,62 @@
+﻿.container {
+    max-width: 1408px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.pageFooter a {
+    position: relative;
+    margin-right: 64px;
+    padding-bottom: 10px;
+    padding-top: 9px;
+    font-weight: 500;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: inherit;
+}
+.pageFooter a:focus,
+.pageFooter a:hover {
+    color: #f9dd79;
+}
+
+.pageFooter a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f9dd79;
+    transition: width 200ms;
+}
+.pageFooter a:hover::after {
+    width: 100%;
+}
+.footerEmail {
+    padding-left: 28px;
+    background-image: url("../../../assets/img/icon-email.svg");
+}
+.footerEmail:focus,
+.footerEmail:hover {
+    background-image: url("../../../assets/img/icon-email-alt.svg");
+}
+.footerPhone {
+    padding-left: 21px;
+    background-image: url("../../../assets/img/icon-phone.svg");
+}
+.footerGithub{
+    padding-left: 25px;
+    background-image: url("../../../assets/img/icon-github.svg");
+    background-size: 20px;
+}
+.footerPhone:focus,
+.footerPhone:hover {
+    background-image: url("../../../assets/img/icon-phone-alt.svg");
+}
+.pageFooter a:active {
+    opacity: 0.5;
+}
+.pageFooter {
+    padding: 40px 0;
+    background-color: #212349;
+}

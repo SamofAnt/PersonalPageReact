@@ -1,38 +1,142 @@
 .App {
-  text-align: center;
+  position: relative;
+  margin: 0;
+  min-width: 1408px;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #f2f2f2;
+  background-color: #141530;
+  background-image: url("../assets/img/pattern-lines-hero.svg");
+  background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1408px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-image {
+  position: relative;
+  padding-top: 200px;
+  height: 798px;
+  background-image: url("../assets/img/bg-html.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 48px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-image .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-image::before {
+  position: absolute;
+  content: "";
+  top: 24px;
+  left: calc(50vw - 32px);
+  width: 800px;
+  height: 800px;
+  background-image: url("../assets/img/hero-image.svg");
+  background-repeat: no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-image::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+  background-color: #0b0c23;
+  background-image: url("../assets/img/bg-tags.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 2px solid #5053a8;
 }
+
+.heading {
+  z-index: 1;
+  order: 2;
+  margin: 0 0 0 -10px;
+  width: 815px;
+  font-size: 96px;
+  line-height: 112px;
+  font-weight: 500;
+}
+
+.hero-image p {
+  z-index: 1;
+  order: 1;
+  margin: 0;
+  padding: 32px 0;
+  padding-bottom: 16px;
+  font-size: 32px;
+  line-height: 48px;
+  color: #f9dd79;
+}
+
+.intro {
+  background-color: #141530;
+  background-image: url("../assets/img/pattern-lines.svg");
+  background-repeat: repeat-y;
+  background-position-x: center;
+}
+
+.intro {
+  padding-top: 160px;
+  padding-bottom: 120px;
+  min-height: 828px;
+}
+
+.subheading {
+  margin: 0 0 100px;
+  text-align: center;
+  font-size: 72px;
+  line-height: 88px;
+  font-weight: 500;
+  color: #f9dd79;
+}
+
+.intro .container {
+  position: relative;
+}
+
+.user-image {
+  position: absolute;
+  margin: 0;
+}
+
+.user-image img {
+  width: 640px;
+  height: 640px;
+  object-fit: cover;
+}
+
+.intro .container div {
+  margin-left: 720px;
+  margin-bottom: 56px;
+}
+
+.intro h3,
+.portfolio h3 {
+  margin: 0 0 16px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.intro p {
+  margin: 0;
+  z-index: 2;
+}
+
+.intro p{
+  z-index: 1;
+  font-size: 36px;
+  line-height: 56px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+

@@ -1,0 +1,22 @@
+﻿.portfolio {
+    background-color: #141530;
+    background-image: url("../../../assets/img/pattern-lines.svg");
+    background-repeat: repeat-y;
+    background-position-x: center;
+    margin: 100px 0;
+}
+.container {
+    max-width: 1408px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+
+.subheading {
+    margin: 0 0 100px;
+    text-align: center;
+    font-size: 72px;
+    line-height: 88px;
+    font-weight: 500;
+    color: #f9dd79;
+}
