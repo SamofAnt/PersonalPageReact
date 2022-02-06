@@ -11,8 +11,8 @@ class Footer extends React.Component{
             <footer className={classes.pageFooter}>
                 <div className={classes.container}>
                     <a href="tel:+79153560898" className={classes.footerPhone}>тел. +7(915)-356-0898</a>
-                    <a href="https://vk.com/decodermiit" target="_blank" className={classes.footerGithub}>Мой GitHub</a>
-                    <a href="mailto:decoder@gmail.com" className={classes.footerEmail}>decoder@gmail.com</a>
+                    <a href="https://github.com/SamofAnt" target="_blank" className={classes.footerGithub}>Мой GitHub</a>
+                    <a href="mailto:samofalov.20022805@gmail.com" className={classes.footerEmail}>samofalov.20022805@gmail.com</a>
                 </div>
             </footer>
         );
